@@ -1,0 +1,24 @@
+{
+  "name": "burgertown",
+  "version": "1.0.0",
+  "description": "UNCC Coding Bootcamp Week 14 Homework",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CACOOK88/burgerTown.git"
+  },
+  "author": "Chad Cook",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CACOOK88/burgerTown/issues"
+  },
+  "homepage": "https://github.com/CACOOK88/burgerTown#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
+    "mysql": "^2.16.0"
+  }
+}
