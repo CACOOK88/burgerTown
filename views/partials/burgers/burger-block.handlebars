@@ -1,0 +1,6 @@
+<li>
+  {{id}}: {{burger_name}}
+  {{#unless devoured}}
+    <button class="devour" data-id="{{this.id}}" data-devoured="{{this.devoured}}">Devour It!!</button>
+  {{/unless}}
+</li>
