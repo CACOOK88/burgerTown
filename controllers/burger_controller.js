@@ -4,6 +4,7 @@ const burger = require('../models/burger.js')
 
 router.get('/', function(req, res) {
   burger.selectAll(function(data) {
+    console.log(data)
     res.render('index', {burgers: data})
   })
 })
@@ -11,9 +12,7 @@ router.get('/', function(req, res) {
 router.post('/api/burgers', function(req, res) {
   burger.insertOne(
     'burger_name', 
-    'devoured', 
-    true, 
-    req.body.id, 
+    req.body.burger_name, 
     function(data) {
       // IS THIS REALLY NEEDED?
       res.json({id: data.insertId})

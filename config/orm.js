@@ -9,8 +9,16 @@ const orm = {
   },
 
   insertOne: function(table, column, value, cb) {
-    let queryString = `INSERT INTO ${table} (${column}) VALUES (${value});`
-    connection.query(queryString, function(err, data) {
+    // let queryString = `INSERT INTO ${table} (${column}) VALUES (${value})`
+    var queryString = "INSERT INTO " + table;
+
+    queryString += " (";
+    queryString += column.toString() ;
+    queryString += ") ";
+    queryString += "VALUES (";
+    queryString += "?";
+    queryString += ") ";
+    connection.query(queryString, value, function(err, data) {
       if (err) throw err
       cb(data)
     })

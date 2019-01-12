@@ -1,0 +1,56 @@
+body {
+  font-size: 1rem;
+  background: #333;
+  color: orange;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 0;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: left;
+}
+
+ul {
+  list-style-type: none;
+  padding: 20px;
+  margin: 0;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+li {
+  margin: 5px 0;
+}
+
+input {
+  width: 400px;
+  height: 30px;
+}
+
+button {
+  border-color: #888;
+  border-radius: 5px;
+  background: #888;
+}
+button.submit {
+  height: 30px;
+  width: 150px;
+}
+
+button:hover {
+  background: red;
+}
+
+button.submit:hover {
+  background: green;
+}
